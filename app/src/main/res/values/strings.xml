@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FeedTheCatApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="feed">FEED</string>
+    <string name="result">Result</string>
+    <string name="results">Results</string>
+    <string name="date">Date</string>
+    <string name="taps">Taps</string>
+    <string name="achievements">Achievements</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="satiety">Satiety</string>
+</resources>

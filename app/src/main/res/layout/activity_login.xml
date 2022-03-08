@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/catt"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/cat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/catt"
+        android:layout_centerHorizontal="true"
+        android:background="@color/yellow"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/playGameButton"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/spinner"
+        android:layout_centerHorizontal="true"
+        android:text="Play the Game"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/newGameButton"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/playGameButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+
+        android:text="Create a new Game" />
+
+    <Button
+        android:id="@+id/deleteGameButton"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/newGameButton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#E91E63"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Delete Game" />
+
+</RelativeLayout>

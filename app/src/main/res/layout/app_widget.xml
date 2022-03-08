@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.FeedTheCatApp.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.FeedTheCatApp.AppWidgetContainer">
+
+    <ImageView
+        android:id="@+id/widgetCat"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/cat"/>
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        style="@style/Widget.FeedTheCatApp.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/widgetCat"
+        android:contentDescription="@string/satiety"
+        android:text="@string/satiety"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+</RelativeLayout>

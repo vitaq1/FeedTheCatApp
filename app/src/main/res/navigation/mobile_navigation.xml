@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="by.bsuir.vshu.feedthecatapp.ui.play.PlayFragment"
+        android:label="FeedTheCat"
+        tools:layout="@layout/fragment_play" />
+
+    <fragment
+        android:id="@+id/navigation_result"
+        android:name="by.bsuir.vshu.feedthecatapp.ui.result.ResultsFragment"
+        android:label="Results"
+        tools:layout="@layout/fragment_result" />
+
+    <fragment
+        android:id="@+id/navigation_achievement"
+        android:name="by.bsuir.vshu.feedthecatapp.ui.achievement.AchievementFragment"
+        android:label="Achievements"
+        tools:layout="@layout/fragment_achievements" />
+</navigation>
