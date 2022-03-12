@@ -34,7 +34,7 @@ class SlideViewPagerAdapter(var ctx: Context) : PagerAdapter() {
         val btnGetStarted = view.findViewById<Button>(R.id.btnGetStarted)
         btnGetStarted.setOnClickListener {
             val intent = Intent(ctx, MainActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            //intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
             ctx.startActivity(intent)
         }
         next.setOnClickListener { SlideActivity.viewPager!!.currentItem = position + 1 }

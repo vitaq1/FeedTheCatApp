@@ -69,15 +69,16 @@
         android:layout_above="@id/catImage"
         android:layout_centerHorizontal="true"
         app:lottie_rawRes="@raw/heart" />
+
     <Button
         android:id="@+id/feedButton"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
         android:layout_below="@id/catImage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:layout_width="75dp"
-        android:layout_height="50dp"
+        android:backgroundTint="#ec407a"
         android:text="@string/feed"
-        android:backgroundTint="#c60039"
 
         />
 

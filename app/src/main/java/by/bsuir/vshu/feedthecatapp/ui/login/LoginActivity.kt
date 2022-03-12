@@ -47,7 +47,9 @@ class LoginActivity : AppCompatActivity(), LoginContract.LoginView {
     }
 
     override fun playChosenGameAction() {
-        presenter.onPlayChosenGame()
+        if (spinner.selectedItem != null)
+            presenter.onPlayChosenGame()
+
     }
 
     override fun deleteChosenGameAction() {
@@ -61,9 +63,9 @@ class LoginActivity : AppCompatActivity(), LoginContract.LoginView {
     }
 
 
-
     override fun setGamesToSpinner(games: List<Game>) {
-        val adapter: ArrayAdapter<*> = ArrayAdapter(this, android.R.layout.simple_spinner_item, games)
+        val adapter: ArrayAdapter<*> =
+            ArrayAdapter(this, android.R.layout.simple_spinner_item, games)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
     }

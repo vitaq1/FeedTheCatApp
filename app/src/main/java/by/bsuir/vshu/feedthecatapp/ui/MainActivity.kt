@@ -29,9 +29,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onStop() {
-        GameRepository.addResult(GameRepository.getCurrentResult())
         super.onStop()
+        println("saved in db")
+        GameRepository.addResult(GameRepository.getCurrentResult())
     }
+
+
 
 
 }

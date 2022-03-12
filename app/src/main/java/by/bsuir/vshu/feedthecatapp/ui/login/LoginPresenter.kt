@@ -21,7 +21,7 @@ class LoginPresenter : LoginContract.LoginPresenter {
     override fun onCreateNewGame() {
         val game = Game()
         gameRepository.addGame(game)
-        gameRepository.setSelectedGame(game)
+        gameRepository.setSelectedGame(gameRepository.getAllGames().last())
         view.openPlayWindowWithGame()
     }
     override fun onPlayChosenGame() {

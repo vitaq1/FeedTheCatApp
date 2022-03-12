@@ -10,7 +10,7 @@ data class Game(
 
 ) {
     override fun toString(): String {
-        return "Game ${id + 1}"
+        return "Game $id"
     }
 }
 

@@ -26,7 +26,7 @@ abstract class GameDao {
     @Insert
     abstract fun insertResult(result: Result)
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     abstract fun insert(game: Game?)
 
     @Update
